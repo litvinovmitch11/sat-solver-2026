@@ -248,6 +248,7 @@ class Solver:
         return SATSolverResult.UNSAT
 
 
+# comment for CI
 if __name__ == "__main__":
     result = Solver(sys.argv[1], Event()).solve()
     if result == SATSolverResult.SAT:
